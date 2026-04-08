@@ -11,6 +11,7 @@ import InvestmentLibrary from './pages/InvestmentLibrary';
 import AIAssetAllocation from './pages/AIAssetAllocation';
 import TaxSavingGuide from './pages/TaxSavingGuide';
 import PortfolioStressTest from './pages/PortfolioStressTest';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="ai-allocation" element={<AIAssetAllocation />} />
               <Route path="tax-guide" element={<TaxSavingGuide />} />
               <Route path="stress-test" element={<PortfolioStressTest />} />
+              <Route path="about-us" element={<AboutUs />} />
             </Route>
           </Routes>
         </Router>

@@ -3,7 +3,7 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import { 
   Home, User, TrendingUp, Target, DollarSign, 
-  Sparkles, Receipt, AlertTriangle, Moon, Sun, Menu, X 
+  Sparkles, Receipt, AlertTriangle, Moon, Sun, Menu, X, Info 
 } from 'lucide-react';
 
 const Layout = () => {
@@ -20,6 +20,7 @@ const Layout = () => {
     { name: 'AI Allocation', path: '/ai-allocation', icon: Sparkles },
     { name: 'Tax Guide', path: '/tax-guide', icon: Receipt },
     { name: 'Stress Test', path: '/stress-test', icon: AlertTriangle },
+    { name: 'About Us', path: '/about-us', icon: Info },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -139,7 +140,7 @@ const Layout = () => {
 
       {/* Footer */}
       <footer className="lg:ml-64 py-6 text-center text-gray-600 dark:text-gray-400 text-sm">
-        <p>Built with ❤️ using React, Tailwind CSS & Recharts</p>
+        <p>Built with ❤️ by Team 404 BNF</p>
         <p className="mt-1">Smart Investment Planner © 2026</p>
       </footer>
     </div>
