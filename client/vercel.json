@@ -1,3 +1,9 @@
 {
-  "name": "smart-investment"
+  "name": "smart-investment",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
 }
