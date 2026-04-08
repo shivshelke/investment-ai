@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Info, Rocket, Github, Linkedin, Mail } from 'lucide-react';
+import { Users, Info, Rocket, Mail, Globe } from 'lucide-react';
 import GlassCard from '../components/GlassCard';
 
 const AboutUs = () => {
@@ -74,10 +74,7 @@ const AboutUs = () => {
                   <p className="text-sm text-indigo-500 font-medium mb-4">{member.role}</p>
                   <div className="flex items-center justify-center gap-3">
                     <a href="#" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-400 hover:text-indigo-500 transition-colors">
-                      <Github className="w-4 h-4" />
-                    </a>
-                    <a href="#" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
-                      <Linkedin className="w-4 h-4" />
+                      <Globe className="w-4 h-4" />
                     </a>
                   </div>
                 </GlassCard>
