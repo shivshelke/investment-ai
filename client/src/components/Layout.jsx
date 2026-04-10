@@ -5,6 +5,7 @@ import {
   Home, User, TrendingUp, Target, DollarSign, 
   Sparkles, Receipt, AlertTriangle, Moon, Sun, Menu, X, Info 
 } from 'lucide-react';
+import Chatbot from './Chatbot';
 
 const Layout = () => {
   const { isDark, toggleTheme } = useTheme();
@@ -143,6 +144,8 @@ const Layout = () => {
         <p>Built with ❤️ by Team 404 BNF</p>
         <p className="mt-1">Smart Investment Planner © 2026</p>
       </footer>
+
+      <Chatbot />
     </div>
   );
 };
