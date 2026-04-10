@@ -18,6 +18,10 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Smart Investment Planner API' });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+  });
+}
+
+export default app;

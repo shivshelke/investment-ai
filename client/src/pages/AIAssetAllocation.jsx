@@ -15,7 +15,8 @@ const AIAssetAllocation = () => {
     setLoading(true);
     
     try {
-      const response = await fetch('http://localhost:5000/api/ai/asset-allocation', {
+      const apiUrl = import.meta.env.VITE_API_URL || '';
+      const response = await fetch(`${apiUrl}/api/ai/asset-allocation`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userProfile)
